@@ -1,0 +1,12 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  tags:
+    - centos
+    - local
+    - shell
+  script:
+    - echo "Runner fonctionne correctement"
+    - uname -a
